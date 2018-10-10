@@ -1,0 +1,47 @@
+export LC_ALL="en_US.UTF-8"
+export LANG="C"
+
+# history
+export HISTTIMEFORMAT='%F %T  '
+export HISTCONTROL=ignoredups:erasedups
+export HISTIGNORE="history:uptime"
+export HISTSIZE=50000
+shopt -s histappend
+
+# vim
+export EDITOR='vim'
+
+# fzf
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
+# vault
+# export VAULT_ADDR=http://127.0.0.1:8200
+# export VAULT_TOKEN=
+
+# java
+# export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+# export JAVA_HOME=$(/usr/libexec/java_home -v 9)
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# nvm
+# export NVM_DIR=~/.nvm
+# . "/usr/local/opt/nvm/nvm.sh"
+
+# maven
+export M2_HOME=~/tools/apache-maven
+export MAVEN_OPTS=-Xmx3072m
+
+# python
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python/2.7.13/bin/python
+# export VIRTUALENV_PYTHON=/usr/local/Cellar/python/2.7.13/bin/python
+# source /usr/local/bin/virtualenvwrapper.sh
+
+# go
+export GOPATH=~/tools/go
+export GOBIN=$GOPATH/bin
+
+# gpg
+# export GPG_TTY="$(tty)"
+
+# rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

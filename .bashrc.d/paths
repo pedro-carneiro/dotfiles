@@ -1,0 +1,5 @@
+PATH=$PATH:\
+/usr/local/sbin:\
+~/.rvm/bin:\
+~/bin:\
+$M2_HOME/bin

@@ -1,0 +1,15 @@
+[core]
+	excludesfile = ~/.gitignore
+[user]
+	name = Pedro Carneiro
+
+[credential "https://github.com"]
+    username = pedro-carneiro
+[credential]
+	helper = store
+[alias]
+	s = status
+[fetch]
+	prune = true
+[include]
+	path = ~/.gitconfig.local
