@@ -1,3 +1,4 @@
+#!/bin/bash
 # PATH=$PATH:/opt/install/git-radar
 
 # format git-radar output

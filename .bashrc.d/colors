@@ -1,3 +1,4 @@
+#!/bin/bash
 # colors
 export RED="\[\033[0;31m\]"
 export YELLOW="\[\033[0;33m\]"

@@ -1,3 +1,4 @@
+#!/bin/bash
 alias ll='ls -lhaG'
 alias grep='grep --color=auto'
 alias vi='vim'
