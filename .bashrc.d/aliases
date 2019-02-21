@@ -21,6 +21,8 @@ alias kdiff="kitty +kitten diff"
 alias icat="kitty +kitten icat --place 139x41@0x0"
 # alias git-cleanup="git pull --prune && git b --merged | grep -v master | xargs git b -d"
 
+alias docker-app='open /Applications/Docker.app/'
+
 alias herokulogin='heroku login --sso'
 alias dc-tests='docker-compose build tests && docker-compose run tests'
 alias rubytest='docker-compose build tests && docker-compose run tests bundle exec rspec'
