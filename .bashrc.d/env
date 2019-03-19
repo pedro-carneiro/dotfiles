@@ -33,9 +33,9 @@ export M2_HOME=~/tools/apache-maven
 export MAVEN_OPTS=-Xmx3072m
 
 # python
-# export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python/2.7.13/bin/python
-# export VIRTUALENV_PYTHON=/usr/local/Cellar/python/2.7.13/bin/python
-# source /usr/local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENV_PYTHON=/usr/local/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
 
 # go
 export GOPATH=~/tools/go
