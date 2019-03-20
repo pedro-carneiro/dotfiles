@@ -29,7 +29,6 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 # . "/usr/local/opt/nvm/nvm.sh"
 
 # maven
-export M2_HOME=~/tools/apache-maven
 export MAVEN_OPTS=-Xmx3072m
 
 # python
