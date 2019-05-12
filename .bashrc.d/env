@@ -20,9 +20,7 @@ export FZF_DEFAULT_COMMAND='ag -g ""'
 # export VAULT_TOKEN=
 
 # java
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-# export JAVA_HOME=$(/usr/libexec/java_home -v 9)
-# export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # nvm
 # export NVM_DIR=~/.nvm
