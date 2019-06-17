@@ -29,6 +29,9 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # maven
 export MAVEN_OPTS=-Xmx3072m
 
+# gradle
+export GRADLE_OPTS=-Xmx3072m
+
 # python
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export VIRTUALENV_PYTHON=/usr/local/bin/python3
