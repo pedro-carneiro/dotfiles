@@ -1,6 +1,7 @@
 #!/bin/bash
 export LC_ALL="en_US.UTF-8"
 export LANG="C"
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # history
 export HISTTIMEFORMAT='%F %T  '
