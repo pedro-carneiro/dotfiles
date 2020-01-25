@@ -1,4 +1,34 @@
 #!/bin/bash
+# git
+function gitpullall() {
+  CWD=`pwd`; find $PWD -type d -name .git -print0 |\
+  xargs -0 -I{} dirname {} | xargs -I{} sh -c \
+  'cd {}; echo "GIT pulling {}"; git pull; git submodule update --recursive'
+}
+function gitinfoall() {
+  CWD=`pwd`; find $PWD -type d -name .git -print0 |\
+  xargs -0 -I{} dirname {} | xargs -I{} sh -c \
+  'cd {}; git config --get remote.origin.url'
+}
+
+function tcp-get {
+  if [ $# -ne 2 ]; then
+    echo "ARGS: <host> <port>"
+  else
+    exec 3<>/dev/tcp/$1/$2
+    echo -e "GET / HTTP/1.1\r\nConnection: close\r\n\r\n" >&3
+    cat <&3
+  fi
+}
+
+vimremote() {
+  if [ $# -ne 3 ]; then
+    echo "ARGS: <user> <host>[:port] <full_path_to_file>"
+  else
+    vim scp://$1@$2//$3
+  fi
+}
+
 function git-open {
   open $(git remote -v | grep -v heroku | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's#:#/#2' -e 's#.git$##') | head -n1
 }
