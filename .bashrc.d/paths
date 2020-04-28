@@ -2,4 +2,5 @@
 PATH=$PATH:\
 /usr/local/sbin:\
 ~/.rvm/bin:\
-~/bin
+~/tools/bin:\
+~/tools/istio/bin
