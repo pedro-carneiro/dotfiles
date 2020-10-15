@@ -12,6 +12,9 @@ source <(kubectl completion bash)
 # direnv
 # eval "$(direnv hook bash)"
 
+# nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
+
 # istio
 [[ -r ~/tools/istio/tools/istioctl.bash ]] && source ~/tools/istio/tools/istioctl.bash
 
