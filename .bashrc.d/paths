@@ -3,4 +3,5 @@ PATH=$PATH:\
 /usr/local/sbin:\
 ~/.rvm/bin:\
 ~/tools/bin:\
-~/tools/istio/bin
+~/tools/istio/bin:\
+/usr/local/opt/libpq/bin
