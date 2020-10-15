@@ -80,7 +80,7 @@ function set_bash_prompt () {
   # history -a; history -c; history -r
 
   # set tab path
-  echo -ne "\033]0;${PWD/#$HOME/~}\007"
+  echo -ne "\033]0;${PWD/#$HOME/'~'}\007"
 }
 
 PROMPT_COMMAND=set_bash_prompt
