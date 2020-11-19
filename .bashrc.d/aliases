@@ -26,8 +26,8 @@ alias icat="kitty +kitten icat --place 139x41@0x0"
 
 alias docker-app='open /Applications/Docker.app/'
 
-alias jdefault="export JAVA_HOME=$(/usr/libexec/java_home -v 14)"
-alias jdk8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
+alias jdefault='unset JAVA_HOME; export JAVA_HOME=$(/usr/libexec/java_home -v 14)'
+alias jdk8='unset JAVA_HOME; export JAVA_HOME=$(/usr/libexec/java_home -v "1.8")'
 
 # alias herokulogin='heroku login --sso'
 # alias dc-tests='docker-compose build tests && docker-compose run tests'
