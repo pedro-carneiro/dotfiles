@@ -24,6 +24,7 @@ alias icat="kitty +kitten icat --place 139x41@0x0"
 # alias stats='Rscript -e "summary(as.numeric(readLines(\"stdin\")))"'
 # alias boxplot='Rscript -e "boxplot(as.numeric(readLines(\"stdin\")))"'
 
+alias sshtemp='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 alias docker-app='open /Applications/Docker.app/'
 
 alias jdefault='unset JAVA_HOME; export JAVA_HOME=$(/usr/libexec/java_home -v 14)'
