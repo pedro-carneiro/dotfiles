@@ -83,4 +83,6 @@ function set_bash_prompt () {
   echo -ne "\033]0;${PWD/#$HOME/'~'}\007"
 }
 
-PROMPT_COMMAND=set_bash_prompt
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  PROMPT_COMMAND=set_bash_prompt
+fi
