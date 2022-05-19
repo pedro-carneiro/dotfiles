@@ -1,6 +1,5 @@
 #!/bin/bash
 PATH=$PATH:\
-/usr/local/sbin:\
 ~/.rvm/bin:\
 ~/.cargo/bin:\
 ~/tools/bin

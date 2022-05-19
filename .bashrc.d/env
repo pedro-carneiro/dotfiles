@@ -10,6 +10,12 @@ export HISTIGNORE="history:uptime"
 export HISTSIZE=50000
 shopt -s histappend
 
+# brew
+for file in /usr/local/bin/brew /opt/homebrew/bin/brew
+do
+    [[ -f "$file" ]] && eval $($file shellenv)
+done
+
 # vim
 export EDITOR='vim'
 
@@ -25,7 +31,7 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 18)
 
 # nvm
 export NVM_DIR=~/.nvm
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && . "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"
 
 # maven
 export MAVEN_OPTS=-Xmx3072m
@@ -34,9 +40,9 @@ export MAVEN_OPTS=-Xmx3072m
 export GRADLE_OPTS=-Xmx3072m
 
 # python
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python@3.9/bin/python3
-export VIRTUALENV_PYTHON=/usr/local/opt/python@3.9/bin/python3
-source /usr/local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=$HOMEBREW_PREFIX/opt/python@3.9/bin/python3
+export VIRTUALENV_PYTHON=$HOMEBREW_PREFIX/opt/python@3.9/bin/python3
+source $HOMEBREW_PREFIX/bin/virtualenvwrapper.sh
 
 # go
 export GOPATH=~/tools/go
