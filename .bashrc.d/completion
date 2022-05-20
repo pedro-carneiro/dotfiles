@@ -1,12 +1,12 @@
 #!/bin/bash
 # auto-complete
 export BASH_COMPLETION_COMPAT_DIR="$HOMEBREW_PREFIX/etc/bash_completion.d"
-[[ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ]] && . "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
+[ -s "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ] && . "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
 
 source $HOMEBREW_PREFIX/etc/bash_completion.d/git-completion.bash
 
 # rvm
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+[ -s $rvm_path/scripts/completion ] && . $rvm_path/scripts/completion
 
 # kubernetes
 source <(kubectl completion bash)
@@ -18,7 +18,7 @@ source <(kubectl completion bash)
 [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion" ] && . "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion"
 
 # istio
-[[ -r ~/tools/istio/tools/istioctl.bash ]] && source ~/tools/istio/tools/istioctl.bash
+[ -s ~/tools/istio/tools/istioctl.bash ] && source ~/tools/istio/tools/istioctl.bash
 
 # gcloud
-if [ -f "$HOMEBREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" ]; then . "$HOMEBREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"; fi
+[ -s "$HOMEBREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" ] && . "$HOMEBREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"

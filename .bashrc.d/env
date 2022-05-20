@@ -13,7 +13,7 @@ shopt -s histappend
 # brew
 for file in /usr/local/bin/brew /opt/homebrew/bin/brew
 do
-    [[ -f "$file" ]] && eval $($file shellenv)
+    [ -s "$file" ] && eval $($file shellenv)
 done
 
 # vim
@@ -52,4 +52,4 @@ export GOBIN=$GOPATH/bin
 # export GPG_TTY="$(tty)"
 
 # rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[ -s "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm"
