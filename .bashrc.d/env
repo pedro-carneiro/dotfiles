@@ -53,3 +53,6 @@ export GPG_TTY="$(tty)"
 
 # rvm
 [ -s "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm"
+
+# gcloud sdk
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
