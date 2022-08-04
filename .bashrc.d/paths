@@ -2,4 +2,5 @@
 PATH=$PATH:\
 ~/.rvm/bin:\
 ~/.cargo/bin:\
-~/tools/bin
+~/tools/bin:\
+/opt/homebrew/opt/libpq/bin
