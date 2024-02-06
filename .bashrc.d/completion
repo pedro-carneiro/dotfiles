@@ -15,7 +15,7 @@ export BASH_COMPLETION_COMPAT_DIR="$HOMEBREW_PREFIX/etc/bash_completion.d"
 # eval "$(direnv hook bash)"
 
 # nvm
-[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion" ] && . "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion"
+[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"
 
 # istio
 [ -s "~/tools/istio/tools/istioctl.bash" ] && source ~/tools/istio/tools/istioctl.bash
