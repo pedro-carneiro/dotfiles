@@ -40,9 +40,9 @@ export MAVEN_OPTS=-Xmx3072m
 export GRADLE_OPTS=-Xmx3072m
 
 # python
-export VIRTUALENVWRAPPER_PYTHON=$HOMEBREW_PREFIX/opt/python@3/bin/python3
-export VIRTUALENV_PYTHON=$HOMEBREW_PREFIX/opt/python@3/bin/python3
-source $HOMEBREW_PREFIX/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=$HOMEBREW_PREFIX/opt/python/bin/python3
+export VIRTUALENV_PYTHON=$HOMEBREW_PREFIX/opt/python/bin/python3
+[ -s "$HOMEBREW_PREFIX/bin/virtualenvwrapper.sh" ] && . "$HOMEBREW_PREFIX/bin/virtualenvwrapper.sh"
 
 # go
 export GOPATH=~/tools/go
