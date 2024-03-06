@@ -1,6 +1,6 @@
 #!/bin/bash
 PATH=$PATH:\
 ~/.rvm/bin:\
-~/.cargo/bin:\
 ~/tools/bin:\
+~/.rye/shims:\
 /opt/homebrew/opt/libpq/bin
