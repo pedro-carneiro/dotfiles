@@ -35,3 +35,5 @@ if [ $UID -ne 0 ]; then
     alias dmesg='sudo dmesg'
     alias htop='sudo htop'
 fi
+
+alias ag='ag --hidden'
