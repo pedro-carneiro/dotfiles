@@ -25,3 +25,6 @@ export BASH_COMPLETION_COMPAT_DIR="$HOMEBREW_PREFIX/etc/bash_completion.d"
 
 # gh
 [ -x "$(command -v gh)" ] && source <(gh completion -s bash)
+
+# pnpm
+[ -x "$(command -v pnpm)" ] && source <(pnpm completion bash)
